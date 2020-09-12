@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block content %}
+    <div class="list-group">
+        <center><h1>Simple CRUD - Products </h1></center><br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for items in products %}
+                <tr>
+                    <td>{{ items.id }}</td>
+                    <td>{{ items.name }}</td>
+                    <td>{{ items.description }}</td>
+                    <td>U$ {{ items.price|intcomma }}</td>
+                    <td>
+                        <a class="btn btn-outline-primary" href="{% url 'upd_product' items.id %}">Edit</a>
+                        <a class="btn btn-outline-danger" href="{% url 'del_product' items.id %}">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
