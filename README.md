@@ -12,7 +12,7 @@ pip install humanize
 pip freeze > requirements.txt
 ```
 
-### You should have an application like the images below
+### You should have an application like the images below.
 
 >Index
 ![Index](https://user-images.githubusercontent.com/59056176/93000366-55687100-f4fe-11ea-9586-3dfe4151bb99.png)
