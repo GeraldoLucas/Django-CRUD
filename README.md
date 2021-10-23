@@ -1,4 +1,4 @@
-# Simple-Django---CRUD
+# Simple Django CRUD
 
 >This is a simple CRUD project - Create, Read, Update, Delete - that can be incorporated into Django - Python, in parallel to Admin.
 
